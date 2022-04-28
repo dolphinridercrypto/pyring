@@ -31,8 +31,8 @@ class RingBufferInternal:
         cursor_position_value: typing.Union[Value, int] = 0,
         lock: typing.Optional[LockLike] = None,
     ):
-        if not size % 2 == 0:
-            raise AttributeError("size must be a factor of 2 for efficient arithmetic.")
+        # if not size % 2 == 0:
+        #     raise AttributeError("size must be a factor of 2 for efficient arithmetic.")
 
         self.ring_size: int = size
         self.factory = factory
